@@ -477,6 +477,42 @@ textarea.form-control {
     resize: vertical;
 }
 
+/* Task */
+
+.tasks {
+    background-color: #f8f9ff;
+}
+
+.tasks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.task-item {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.task-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.task-icon {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.task-item h3 {
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
 /* Footer */
 footer {
     background: var(--dark-color);
